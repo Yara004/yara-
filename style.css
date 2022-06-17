@@ -2,30 +2,65 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
 }
-
+:root{
+    --main-color:#ff702a;
+    --text-color:#fff;
+    --bg-color:#1e1c2a;
+    --h2-font:2.5rem;
+    --big-font:5rem;
+    --p-font:0.9rem;
+}
+::selection{
+    background: var(--main-color);
+    color: #fff;
+}
 html{
     font-size: 62.5%;
 }
-.header{
-height: 90vh;
-position: relative;
+body {
+    font-family: 'popons', sans-serif;
+    background-color: rgb(27,27,27);
+    overflow-x: hidden;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
+.header {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://res.cloudinary.com/jerrick/image/upload/f_jpg,fl_progressive,q_auto,w_1024/gspgrtki0bmhvyglawxv.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.bx bx-menu{color: #fff;}
+
 .navbar{
     height: 110px;
     width:100%;
-    background-color: transparent;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
     z-index: 10;
-}
-.navbar-box{
+    position: relative;
+    background-size: cover;
+    }
+.navbar-box {
     display: flex;
     align-items: center;
     font-size: 2rem;
     color: white;
+    position: relative;
 }
 .header-tertiary{
     font-size: 3.5rem;
@@ -42,4 +77,1089 @@ font-size: 2rem;
     text-decoration: none;
     color: white;
     padding: 3rem;
+    transition: all .2s ease;
+}
+
+.navbar-link:hover{
+    background-color: #da6b1d;
+    color: white;
+}
+.navbar-Link-book:visited,
+.navbar-Link-book:link{
+    text-decoration: none;
+    color: white;
+    padding: 2rem 3.5rem;
+    border: 1px solid #da6b1d;
+    border-radius: 200px;
+    box-shadow: 0 0 1rem rgba(236, 118, 40, .5);
+    text-shadow: 0 .3rem 1rem rgba(255, 255, 255, .5);
+    transition: all .4s ease;
+}
+
+.navbar-link-book:hover{
+    background-color: #da6b1d;
+    color: white;
+}
+.toggle{
+    height: 5rem;
+    width:5rem;
+    display: none;
+}
+.toggle div{
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    margin: 1rem;
+}
+.header-container {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    color: white;
+    position: revert;
+    background-position:center;
+}
+.video{
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,.4);
+position: absolute;
+background-size:contain;
+bottom: 0;
+right: 0;
+}
+#video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+.header-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+.heading-primary{
+    font-size: 6.5rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+nav img{max-width: 60%}
+#restaurant{
+    color: #da6b1d;
+    font-weight: 800;
+    font-size: 8rem;
+    
+}
+.lead{
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+.book-now:visited,
+.book-now:Link{
+    text-decoration:none;
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-top: 4rem;
+    border: 1px solid white;
+
+    border-radius: 100px;
+    transition: all .3s ease;
+    box-shadow: 0 1rem 1rem rgba(240,170,55,.1);
+    text-shadow: 0 1rem 1rem rgba(0,0,0,.6);
+}
+.book-now:hover{
+    background-color: #da6b1d;
+    border: 1px solid white;
+    box-shadow: 0 0 2rem rgba(240, 107, 55, .8);
+}
+
+/*menu*/
+
+.menu{
+    width: 100%;
+    padding:  5rem 5rem;
+    background-image: linear-gradient(to right bottom, rgb(255,81,0), rgba(255,0,0,.5));
+
+}
+
+.menu-heading{
+    font-size: 12rem;
+    text-align: center;
+    text-shadow: 0 0 1rem rgba(0,0,0,.4);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+}
+.menu-grid{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
+    grid-gap: 2rem;
+    margin-top: 10px;
+}
+.heading-secondary{
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+.menu-img{
+    height:50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("https://res.cloudinary.com/jerrick/image/upload/v1644381256/6203444879f00f001d69e2ec.gif");
+}
+.menu-img1{
+    height:50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("https://st2.depositphotos.com/1000339/5752/i/600/depositphotos_57527967-stock-photo-burger-and-french-fries.jpg");
+}
+.menu-img2{
+    height:50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("https://www.budgetbytes.com/wp-content/uploads/2013/07/Creamy-Tomato-Spinach-Pasta-close.jpg");
+}
+.menu-img3{
+    height:50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("https://alijaza.ouronlineservice.com/wp-content/uploads/2021/03/chicken-shish-tawook.jpg");
+}
+.menu-img4{
+    height:50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("https://simply-delicious-food.com/wp-content/uploads/2019/07/Pancake-board-2.jpg");
+}
+.menu-img5{
+    height:50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("https://www.myweekendplan.com.my/wp-content/uploads/2020/05/15-Words-to-Describe-Your-Desserts-4.jpg");
+}
+.menu-img6{
+    height:50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("https://www.aimsindia.com/wp-content/uploads/2019/05/refreshing-drinks.png");
+}
+.menu-img7{
+    height:50%;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
+    background-image: url("https://t3.ftcdn.net/jpg/01/54/49/64/360_F_154496440_yaWWxpPKBiHVRgTVeVDVv6WCwv3op15e.jpg");
+}
+.menu-container{
+    width: 100%;
+    height: 40rem;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    transition: all .4s ease;
+}
+.menu-container:hover{
+    box-shadow: 0 0 5rem rgba(0,0,0,.4);
+    transform: scale(1.07);
+}
+.menu-p{
+    font-size: 1.4rem;
+    padding: 1rem;
+    text-align: center;
+}
+.menu-title{
+    font-size: 3rem;
+    text-align: center;
+}
+.price{
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: #da6b1d;
+    text-shadow: 0 .4rem 2rem rgba(0,0,0,.4);
+}
+.hero-btn{
+    margin-left: 70px;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #da6b1d;
+    border: 1px solid #da6b1d;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover {
+    text-align: center;
+    border: 1px solid #da6b1d;
+    background: #da6b1d;
+    transition: 1s;
+}
+.red-btn{
+    text-align: center;
+    border: 1px solid #da6b1d;
+    background: transparent;
+    color: rgba(0,0,0,0.7);
+}
+nav img{width:150px}
+
+/*------------contact-------*/
+.contact{
+    padding: 15rem 10rem;
+    width:100%;
+    background-image: url("https://besthqwallpapers.com/Uploads/22-8-2021/175180/thumb2-black-brickwall-4k-close-up-identical-bricks-black-bricks.jpg");
+    background-size: cover;
+}
+.contact-content{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 3rem rgba(0,0,0,0.9);
+}
+.left{
+    background-color: #da6b1d;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.right{
+    background-color: white;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+}
+.right-img{
+    height: 20rem;
+    width:25rem;
+    position: absolute;
+    top: -11rem;
+    left: -11rem;
+}
+.contact-form{
+    padding: 5rem;
+    width: 100%;
+}
+.form{
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+}
+.form-group{
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+}
+.contact-heading{
+    font-size: 6rem;
+    color: #da6b1d;
+}
+.contact-btn:link,
+.contact-btn:visited{
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #da6b1d;
+    background-color: transparent;
+    color: #da6b1d;
+    outline: none;
+    font-size: 3.4rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,.4);
+    transition: all .4s ease;
+}
+.contact-btn:hover{
+    background-color: #da6b1d;
+    box-shadow: 0 .3rem 1rem rgba(0,0,0,.6);
+    color: white;
+}
+.input{
+    width: 98%;
+    outline: none;
+    border: 1px solid #da6b1d;
+    background-color: #fff;
+    height: 7rem;
+    font-size: 2rem;
+    border-radius: 1000px;
+    text-indent: 5px;
+    box-shadow: 0 0 1rem rgba(0,0,0,.2);
+    padding: 1rem;
+    transition: all .4s ease;
+}
+.input:focus{
+    width: 100%;
+}
+.input:valid{
+    border-left: 10px solid green;
+}
+.input:invalid{
+    border-left: 10px solid red;
+}
+.textarea{
+    resize: none;
+    height: 15rem;
+    border-radius: 40px;
+    padding: 2rem;
+}
+.form-group label{
+    position: absolute;
+    top: 46px;
+    left: 61px;
+    font-size: 1.4rem;
+    background-color: white;
+    visibility: hidden;
+    transition: top .4s ease, left .4s ease;
+}
+.input:focus ~ label{
+    top: 11px;
+    left: 61px;
+    padding: 0 1rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,.4);
+    visibility: visible;
+    border-radius: 10px;
+}
+
+.input:focus::placeholder{
+    color: transparent;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.maps-title{
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+}
+
+
+.review{
+    padding: 15rem;
+    width: 100%;
+    background-color: #da6b1d;
+}
+.review-heading{
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    position: relative;
+}
+.review-content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+.review1{
+    display: flex;
+    flex-direction: relative;
+    align-items: center;
+    color: white;
+    padding: 4rem;
+    box-shadow: 0 3rem 1rem rgba(0,0,0,.4);
+}
+.review1:not(:last-child){
+    margin-bottom: 5rem;
+}
+.review-logo{
+    height: 15rem;
+    border-radius: 50%;
+    background-image: url("https://cdn2.vectorstock.com/i/1000x1000/17/16/default-avatar-anime-girl-profile-icon-vector-21171716.jpg");
+    background-size: cover;
+    min-width: 16rem;
+}
+.review-info{
+    margin-left: 2rem;
+    min-width: 16rem;
+}
+.name{
+    font-size: 2rem;
+    margin: .6rem 0;
+}
+.review-box{
+    font-size: 1.6rem;
+    margin-left: 2rem;
+}
+.review-star .checked{
+    color: rgb(0,255,0);
+}
+
+.review2{
+    display: flex;
+    flex-direction: relative;
+    align-items: center;
+    color: white;
+    padding: 4rem;
+    box-shadow: 0 3rem 1rem rgba(0,0,0,.4);
+}
+.review2:not(:last-child){
+    margin-bottom: 5rem;
+}
+.review-logo {
+    height: 15rem;
+    border-radius: 50%;
+    background-image: url("https://thumbs.dreamstime.com/b/default-avatar-profile-icon-social-media-user-vector-image-icon-default-avatar-profile-icon-social-media-user-vector-image-209162840.jpg");
+    background-size: cover;
+    min-width: 16rem;
+}
+ /*----------footer------*/
+        .footer {
+            margin: 0 auto;
+            font-size: large;
+            width: 100%;
+            text-align: center;
+            padding: 50px 0;
+            margin-bottom: 25px;
+            margin-top: 50px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+            .footer h4 {
+                color: #ff702a;
+            }
+
+        .icons {
+            color: #ff702a;
+        }
+
+        /*-----------Pizza-------------*/
+
+        .cover-head-pizza {
+            margin-bottom: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://media.istockphoto.com/vectors/pizza-background-vector-id165742574?k=20&m=165742574&s=612x612&w=0&h=D1GWCKYniVJGgBwwL2eP33fjTcrmxtIlCpt3vG05Ehg=);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .pizza-img {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://static.toiimg.com/thumb/53335859.cms?width=1200&height=900");
+        }
+
+        .pizza-img1 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://cook.fnr.sndimg.com/content/dam/images/cook/fullset/2011/1/6/0/CCEV103_Margherita-Pizza_s4x3.jpg.rend.hgtvcom.616.462.suffix/1416867304309.jpeg");
+        }
+
+        .pizza-img2 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://foodhub.scene7.com/is/image/woolworthsltdprod/2004-easy-pepperoni-pizza:Desktop-1300x658");
+        }
+
+        .pizza-img3 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://ashleemarie.com/wp-content/uploads/2016/02/chicken-fajita-pizza.jpg");
+        }
+
+        .pizza-img4 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://i.ytimg.com/vi/dJ8gWah4axo/maxresdefault.jpg");
+        }
+
+        .pizza-img5 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://external-preview.redd.it/6fnesYqbJtTGD6JqilNTY2IR5XI_YJwTUCUVAIVn5fQ.jpg?auto=webp&s=14a2c012122b78a8378748461fc706218551ed6a");
+        }
+
+        /*------------Burger-----------*/
+
+        .cover-head-burger {
+            margin-bottom: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://media.istockphoto.com/vectors/doodle-hamburger-seamless-pattern-background-vector-id520709350?b=1&k=20&m=520709350&s=612x612&w=0&h=3t1-sxfAgm2px9n10rc3q7ERpaCw4jX0v8n9WA7zwnI=);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .burger-img {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://assets.epicurious.com/photos/57c5c6d9cf9e9ad43de2d96e/master/pass/the-ultimate-hamburger.jpg");
+        }
+
+        .burger-img1 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://vikalinka.com/wp-content/uploads/2021/07/Greek-Chicken-Burger-1CR2-Edit.jpg");
+        }
+
+        .burger-img2 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://www.thereciperebel.com/wp-content/uploads/2021/06/chicken-burgers-www.thereciperebel.com-1200-20-of-25.jpg");
+        }
+
+        .burger-img3 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://img.taste.com.au/d4BmBXm9/taste/2016/11/fish-burgers-1004-1.jpeg");
+        }
+
+        .burger-img4 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://img.freepik.com/free-photo/side-view-double-cheeseburger-with-grilled-beef-patties-cheese-lettuce-leaf-burger-buns_141793-4883.jpg?w=2000");
+        }
+
+        .burger-img5 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://modernsweets.net/wp-content/uploads/2021/06/Xinger-Chicken-Burger.jpg");
+        }
+
+        .burger-img6 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://crustysmtl.ca/wp-content/uploads/2021/12/260450373_1493069921066754_808820837496551001_n-500x500.jpg");
+        }
+
+        .burger-img7 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://www.darngoodveggies.com/wp-content/uploads/2016/05/1J4A6974.jpg");
+        }
+
+        /*-----------Pasta-----------*/
+        .cover-head-pasta {
+            margin-bottom: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://i.pinimg.com/originals/0d/1a/9c/0d1a9ce7928a1a792b924143ea007e86.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .pasta-img {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://media.istockphoto.com/photos/spaghetti-in-a-dish-on-a-white-background-picture-id1144823591?k=20&m=1144823591&s=612x612&w=0&h=6cuhQIP6Xmzu98wYGDnaxyF-Y4PBgfQiejTMQmqQKYQ=");
+        }
+
+        .pasta-img1 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://www.finedininglovers.com/sites/g/files/xknfdk626/files/styles/recipes_1200_800_fallback/public/Original_5758_StockFood-00299679.jpg?itok=VnZqCc7c");
+        }
+
+        .pasta-img2 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://insanelygoodrecipes.com/wp-content/uploads/2021/01/Homemade-Ground-Beef-Lasagna-with-Melted-Cheese.png");
+        }
+
+        .pasta-img3 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://cupfulofkale.com/wp-content/uploads/2021/07/Spicy-Garlic-Noodles-in-Bowl-720x720.jpg");
+        }
+
+        .pasta-img4 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://thecozycook.com/wp-content/uploads/2021/10/Tortellini-Sauce-f.jpg");
+        }
+
+        .pasta-img5 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://hips.hearstapps.com/delish/assets/17/36/1504715566-delish-fettuccine-alfredo.jpg");
+        }
+
+        .pasta-img6 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://www.foodlovinfamily.com/wp-content/uploads/2020/05/green-pasta-square-500x500.jpg");
+        }
+        /*----------Sandwiches---------*/
+        .cover-head-sand {
+            margin-bottom: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://as2.ftcdn.net/v2/jpg/01/45/30/05/1000_F_145300545_EO0vqKKiuQrdFCXLhq66F4w969OdKytO.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .sand-img {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://lacuna.fra1.digitaloceanspaces.com/resources/images/products/Tawouk%20sandwich%20Jpeg.jpg");
+        }
+
+        .sand-img1 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://t4.ftcdn.net/jpg/02/34/85/79/360_F_234857953_Uoy85CezBzg7KYOMB97MtkGY1aUq8HeS.jpg");
+        }
+
+        .sand-img2 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://ilovearabicfood.com/wp-content/uploads/2020/11/12-Meat-Kebab-Sandwich.jpg");
+        }
+
+        .sand-img3 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://www.tasteofbeirut.com/wp-content/uploads/2015/11/shaw-sandwich-400x267.jpeg");
+        }
+
+        .sand-img4 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://images.deliveryhero.io/image/talabat/Menuitems/Fries_sandwich_637490294438755133.jpg");
+        }
+
+        .sand-img5 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://lacuna.fra1.digitaloceanspaces.com/resources/images/products/cheese%20and%20turkey%20jpeg.jpg");
+        }
+
+        .sand-img6 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://lacuna.fra1.digitaloceanspaces.com/resources/images/products/soujouk%20sandwich.jpg");
+        }
+
+        .sand-img7 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://lacuna.fra1.digitaloceanspaces.com/resources/images/products/escalope.jpg");
+        }
+
+        /*---------Breakfast----------*/
+
+        .cover-head-break {
+            margin-bottom: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://s1.1zoom.me/big0/774/Coffee_Sandwich_Fried_egg_Breakfast_Cup_532159_1280x913.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .break-img {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/0e/b9/d2/83/lebanese-breakfast.jpg");
+        }
+
+        .break-img1 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://hips.hearstapps.com/vidthumb/images/delish-snackdown-pancakes-09-1540245026.jpg");
+        }
+
+        .break-img2 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://img1.beirut.com/GetImage3/sous/article/53774/690x300");
+        }
+
+        .break-img3 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://diethouseme.com/demo/wp-content/uploads/2016/05/mankouche.jpg");
+        }
+
+        .break-img4 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://i0.wp.com/al-rawiya.com/wp-content/uploads/2021/11/Kaake-Tripoli_-@livelovetripoli-edited.png?resize=599%2C374&ssl=1");
+        }
+
+        .break-img5 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://www.theflavorbender.com/wp-content/uploads/2020/05/French-Croissants-SM-2363.jpg");
+        }
+
+        /*----------Dessert----------*/
+
+        .cover-head-dessert {
+            margin-bottom: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://img.freepik.com/free-photo/elevated-view-unhealthy-food-white-background_23-2147885893.jpg?size=626&ext=jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .dessert-img {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://www.momontimeout.com/wp-content/uploads/2021/10/waffle-recipe-square.jpeg");
+        }
+
+        .dessert-img1 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://www.milkmaid.in/sites/default/files/2022-03/Strawberry-IceCream-590x436.jpg");
+        }
+
+        .dessert-img2 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://media.istockphoto.com/photos/super-chocolatey-cake-picture-id1345623444?b=1&k=20&m=1345623444&s=170667a&w=0&h=vD3JOg8ZwEu8k4olnKofii4lYVIHPALoGwfVtUSOPqc=");
+        }
+
+        .dessert-img3 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://hips.hearstapps.com/hmg-prod/images/delish-basic-crepes-horizontal-1545245797.jpg");
+        }
+
+        .dessert-img4 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://resize.prod.femina.ladmedia.fr/rblr/652,438/img/var/2021-08/istock-672110328.jpg");
+        }
+
+        .dessert-img5 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://lacuisinedegeraldine.fr/wp-content/uploads/2020/12/DSC00413-scaled.jpg");
+        }
+
+        .dessert-img6 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://sugargeekshow.com/wp-content/uploads/2018/01/french-macaron-recipe.jpg");
+        }
+
+        .dessert-img7 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://www.wholesomeyum.com/wp-content/uploads/2017/03/wholesomeyum-Keto-Cheesecake-Recipe-Low-Carb-Sugar-Free-Cheesecake.jpg");
+        }
+
+        /*----------------Drinks--------------*/
+        .cover-head-break {
+            margin-bottom: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://s1.1zoom.me/big0/774/Coffee_Sandwich_Fried_egg_Breakfast_Cup_532159_1280x913.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .break-img {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/0e/b9/d2/83/lebanese-breakfast.jpg");
+        }
+
+        .break-img1 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://hips.hearstapps.com/vidthumb/images/delish-snackdown-pancakes-09-1540245026.jpg");
+        }
+
+        .break-img2 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://img1.beirut.com/GetImage3/sous/article/53774/690x300");
+        }
+
+        .break-img3 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://diethouseme.com/demo/wp-content/uploads/2016/05/mankouche.jpg");
+        }
+
+        .break-img4 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://i0.wp.com/al-rawiya.com/wp-content/uploads/2021/11/Kaake-Tripoli_-@livelovetripoli-edited.png?resize=599%2C374&ssl=1");
+        }
+
+        .break-img5 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://www.theflavorbender.com/wp-content/uploads/2020/05/French-Croissants-SM-2363.jpg");
+        }
+
+        /*----------Dessert----------*/
+
+        .cover-head-drink {
+            margin-bottom: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://img5.goodfon.com/wallpaper/nbig/f/ee/chai-bokaly-steklo-napitki-kokteil.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .drink-img {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://post.healthline.com/wp-content/uploads/2020/08/coffee-worlds-biggest-source-of-antioxidants-1296x728-feature_0-800x728.jpg");
+        }
+
+        .drink-img1 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://www.aicr.org/wp-content/uploads/2020/06/peppermint-tea-on-teacup-1417945.jpg");
+        }
+
+        .drink-img2 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://www.thespruceeats.com/thmb/sBYwObOI0p59L60c3A2vwXOrToY=/3831x3831/smart/filters:no_upscale()/cookie-milkshake-recipe-305397-hero-01-ae75bd5313724a03ba1b538dc6a1a167.jpg");
+        }
+
+        .drink-img3 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://www.cookingclassy.com/wp-content/uploads/2021/06/tropical-smoothie-10.jpg");
+        }
+
+        .drink-img4 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://article.innovadatabase.com/articleimgs/article_images/637605572811672175soft%20drink%20pour%20square2.jpeg");
+        }
+
+        .drink-img5 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://thebusybaker.ca/wp-content/uploads/2020/04/healthy-homemade-iced-tea-fb-ig-1-scaled.jpg");
+        }
+
+        .drink-img6 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://miro.medium.com/max/400/0*T9Ewy4mAGUmcfQ-a.jpg");
+        }
+
+        .drink-img7 {
+            height: 50%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://static.onecms.io/wp-content/uploads/sites/44/2020/06/08/mineral-water.jpg");
+        }
+
+        .plat-img1 {
+            height: 70%;
+            width: 100%;
+            background-size: cover;
+            background-position: left;
+            background-image: url("https://www.elbalad.news/Upload/libfiles/886/8/923.jpg");
+        }
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary {
+        width: 67%;
+    }
+
+    #secondary {
+        width: 30%;
+        margin-left: 3%;
+    }
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary {
+        width: 100%;
+    }
+
+    #secondary {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+}
+@media (min-width: 640px) {
+    body {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:960px) {
+    body {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:1100px) {
+    body {
+        font-size: 1.5rem;
+    }
 }
